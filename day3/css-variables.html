@@ -63,7 +63,9 @@
     const inputs = document.querySelectorAll(".controls input");
 
     function handleUpdate() {
-      console.log(this.value)
+      // console.log(this.name)
+      const suffix = this.dataset.sizing || ""; //grab px suffix from current element data
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);  //get element name to set variables
     }
 
     //updates on value change
