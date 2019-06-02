@@ -1,0 +1,1 @@
+Practice with vanilla JavaScript fundamentals and working in the DOM
