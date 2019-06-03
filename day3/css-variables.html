@@ -65,7 +65,8 @@
     function handleUpdate() {
       // console.log(this.name)
       const suffix = this.dataset.sizing || ""; //grab px suffix from current element data
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);  //get element name to set variables
+      //get element name to set variables --name
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix); 
     }
 
     //updates on value change
